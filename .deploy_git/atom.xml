@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>花钱的艺术，存钱的智慧</title>
+  <subtitle>这天不遮我眼，这地不埋我心</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-04-27T11:58:58.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>何世远(heshiyuan)</name>
+    <email>shiyuan4work@sina.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java基础-1-java安装及环境变量配置</title>
+    <link href="http://yoursite.com/2017/04/27/java%E5%9F%BA%E7%A1%80-1-java%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2017/04/27/java基础-1-java安装及环境变量配置/</id>
+    <published>2017-04-27T11:26:20.000Z</published>
+    <updated>2017-04-27T11:58:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点。<br><a id="more"></a><br>    由于没有修改/etc/profile的权限，故此处采用单独用户配置<br>    1.打开terminal或者iterm，输入java -version查看系统是否已经安装过jdk<br>    2.下载jdk mac版<br>    （<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html）" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html）</a><br>    3.安装完之后，cd /Library/Java/JavaVirtualMachines/  查看jdk安装情况<br>    4.vim ~/.bash_profile 输入以下代码<br>        AVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home<br>        PATH=$JAVA_HOME/bin:$PATH<br>        export JAVA_HOME<br>        export PATH<br>    5.输入 source ~/.bash_profile 使配置文件生效<br>    6.输入 java -version查看安装是否成功<br>    如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="小白入门篇-java" scheme="http://yoursite.com/categories/%E5%B0%8F%E7%99%BD%E5%85%A5%E9%97%A8%E7%AF%87-java/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>项目管理-1-maven安装及环境变量配置</title>
+    <link href="http://yoursite.com/2017/04/27/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86-1-maven%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2017/04/27/项目管理-1-maven安装及环境变量配置/</id>
+    <published>2017-04-27T11:01:17.000Z</published>
+    <updated>2017-04-27T11:56:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>越来越多的公司启用maven管理公司商业项目，所以maven的学习势在必行。
+</code></pre><a id="more"></a>
+<p>Maven项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的软件项目管理工具.<br>Maven 除了以程序构建能力为特色之外，还提供高级项目管理工具。由于 Maven 的缺省构建规则有较高的<br>可重用性，所以常常用两三行 Maven 构建脚本就可以构建简单的项目。由于 Maven 的面向项目的方法，<br>许多 Apache Jakarta 项目发文时使用 Maven，而且公司项目采用 Maven 的比例在持续增长。<br>    本篇介绍macbookpro下安装及配置maven环境变量。<br>    1.下载maven（<a href="https://maven.apache.org/download.cgi），并解压到某一个目录，" target="_blank" rel="external">https://maven.apache.org/download.cgi），并解压到某一个目录，</a><br>如:/Users/heshiyuan/data/devTools/maven/apache-maven-3.3.9<br>    2.打开iterm或者terminal，输入以下命令：<br>        vim ~/.bash_profile<br>    3.添加以下几行代码，之后保存并推出:wq<br>        MAVEN_HOME=/Users/heshiyuan/data/devTools/maven/apache-maven-3.3.9<br>        PATH=$MAVEN_HOME/bin:$PATH<br>        export MAVEN_HOME<br>        export PATH<br>    4.输入以下命令使.bash_profile生效<br>        source ~/.bash_profile<br>    5.输入mvn -version查看是否成功<br>    6.如果未安装成功，检查是否先设置了java环境变量<br>        JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home<br>        PATH=$JAVA_HOME/bin:$PATH<br>        export JAVA_HOME<br>        export PATH<br>    如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;越来越多的公司启用maven管理公司商业项目，所以maven的学习势在必行。
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="项目管理利器-maven" scheme="http://yoursite.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%88%A9%E5%99%A8-maven/"/>
+    
+    
+      <category term="maven,项目管理,mac" scheme="http://yoursite.com/tags/maven-%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86-mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(日志管理-3)-logback剖析</title>
+    <link href="http://yoursite.com/2017/04/26/%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86-3-logback%E5%89%96%E6%9E%90/"/>
+    <id>http://yoursite.com/2017/04/26/日志管理-3-logback剖析/</id>
+    <published>2017-04-26T03:43:59.000Z</published>
+    <updated>2017-04-26T05:03:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>待填充
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;待填充
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="日志管理之美" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E4%B9%8B%E7%BE%8E/"/>
+    
+    
+      <category term="log4j,java,日志,logback" scheme="http://yoursite.com/tags/log4j-java-%E6%97%A5%E5%BF%97-logback/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(日志管理-1)关于日志的扯淡</title>
+    <link href="http://yoursite.com/2017/04/26/%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86-1-%E5%85%B3%E4%BA%8E%E6%97%A5%E5%BF%97%E7%9A%84%E6%89%AF%E6%B7%A1/"/>
+    <id>http://yoursite.com/2017/04/26/日志管理-1-关于日志的扯淡/</id>
+    <published>2017-04-26T03:31:25.000Z</published>
+    <updated>2017-04-27T11:45:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>待填充
+</code></pre><a id="more"></a>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;待填充
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="日志管理之美" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E4%B9%8B%E7%BE%8E/"/>
+    
+    
+      <category term="log4j,java,日志,logback" scheme="http://yoursite.com/tags/log4j-java-%E6%97%A5%E5%BF%97-logback/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>(日志管理-2)log4j剖析</title>
+    <link href="http://yoursite.com/2017/04/26/%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86-2-log4j%E5%89%96%E6%9E%90/"/>
+    <id>http://yoursite.com/2017/04/26/日志管理-2-log4j剖析/</id>
+    <published>2017-04-26T03:31:25.000Z</published>
+    <updated>2017-04-27T12:06:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>Log4J的配置文件就是用来设置记录器的级别、存放器和布局的，它可接key=value格式的设置
+</code></pre><p>或xml格式的设置信息。通过配置，可以创建出Log4J的运行环境。log4j.properties ==&gt; src同级创建并设置log4j.properties<br>　　log4j.rootLogger = 日志级别，appender1, appender2,…</p>
+<p>　　　　日志级别：ALL &lt; DEBUG &lt; INFO &lt; WARN &lt; ERROR &lt; FATAL &lt; OFF，不区分大小写</p>
+<p>　　　　注意，需在控制台输入，只需将其中一个appender定义为stdout即可<br>　　　　注意，rootLogger默认是对整个工程生效<br>　　　　注意，如果只想对某些包操作，<br>        那么：log4j.logger.hsy.utils = info, stdout，表示该日志对package hsy.util生效<br>　　　　注意，这样做可以区分dev/线上，也可以减小性能影响：if(log.isDebugEnabled()){log.debug();}<br>　　　　———————–</p>
+<p>　　　　log4j.appender.appender1 = org.apache.log4j.日志输出到哪儿<br>　　　　　　ConsoleAppender（控制台）<br>　　　　　　FileAppender（文件）<br>　　　　　　DailyRollingFileAppender（每天产生一个日志文件）<br>　　　　　　RollingFileAppender（文件大小到达指定尺寸时产生一个新的文件）<br>　　　　　　WriteAppender（将日志信息以流格式发送到任意指定的地方）<br>　　　　　　JDBCAppender（将日志信息保存到数据库中）<br>　　　　　　log4j.appender.appender1.File=文件目录及文件<br>　　　　    log4j.appender.appender1.MaxFileSize=最大文件大小<br>　　　　    log4j.appender.appender1.MaxBackupIndex=备份文件个数</p>
+<p>　　　　其中，appender1是在第一行定义过的；<br>　　　　文件目录及文件，例如，/home/admin/logs/jar/debug.log<br>    最大文件大小，例如，100KB<br>　　　　备份文件个数，例如，1</p>
+<p>　　　　—————–<br>　　　　log4j.appender.ServerDailyRollingFile.DatePattern=日志后缀格式<br>　　　　例如，’.’yyyy-MM-dd<br>　　　　　　log4j.appender.appender1.layout=org.apache.log4j.日志布局格式<br>　　　　　　HTMLLayout（以HTML表格形式布局）<br>　　　　　　SimpleLayout（包含日志信息的级别和信息字符串）<br>　　　　　　TTCCLayout（包含日志产生的时间，执行绪，类别等信息）<br>　　　　　　PatternLayout（可以灵活的指定布局格式，常用）<br>　　　　——————<br>　　　　log4j.appender.appender1.layout.ConversionPattern=日志输出格式<br>　　　　打印参数: Log4J采用类似C语言中的printf函数的打印格式格式化日志信息，如下:<br>　　　　例如，%d{yyyy-MM-dd HH:mm:ss SSS} %t %5p %l - %m%n<br>　　　　　　%c 输出日志信息所属的类的全名<br>　　　　　　%d 输出日志时间点的日期或时间，默认格式为ISO8601，也可以在其后指定格式，<br>        比如：%d{yyy-M-dd HH:mm:ss SSS}，输出类似：2002-10-18 22:10:28,673<br>　　　　　　%f 输出日志信息所属的类的类名<br>　　　　　　%l 输出日志事件的发生位置，即输出日志信息的语句处于它所在的类的第几行<br>　　　　　　%m 输出代码中指定的信息，如log(message)中的message<br>　　　　　　%n 输出一个回车换行符，Windows平台为“rn”，Unix平台为“n”<br>　　　　　　%p 输出优先级，即DEBUG，INFO，WARN，ERROR，FATAL。<br>        如果是调用debug()输出的，则为DEBUG，依此类推<br>　　　　　　%r 输出自应用启动到输出该日志信息所耗费的毫秒数<br>　　　　　　%t 输出产生该日志事件的线程名<br>　　　　　　—————–<br>　　　　　　log4j.appender.ServerDailyRollingFile.Append=true<br>　　　　　　不解释，追加往后写便是<br>　　　　　　总结一下：<br>　　　　　　　　Logger类：完成日志记录，设置日志信息级别<br>　　　　　　　　Appender类：决定日志去向，终端、DB、硬盘<br>　　　　　　　　Layout类：决定日志输出的样式，例如包含当前线程、行号、时间<br>　　　　　　　　——————<br>　　　　　　　　在代码中使用log4j，初始化Logger:<br>　　　　　　　　　　1）在程序中调用BasicConfigurator.configure()方法：<br>            给根记录器增加一个ConsoleAppender，<br>            输出格式通过PatternLayout设为”%-4r [%t] %-5p %c %x - %m%n”，<br>            还有根记录器的默认级别是Level.DEBUG.<br>　　　　　　　　　　2）配置放在文件里，通过命令行参数传递文件名字，<br>            通过PropertyConfigurator.configure(args[x])解析并配置；<br>　　　　　　　　　　3）配置放在文件里，通过环境变量传递文件名等信息，<br>            利用log4j默认的初始化过程解析并配置；<br>　　　　　　　　　　4）配置放在文件里，通过应用服务器配置传递文件名等信息，<br>            利用一个特殊的servlet来完成配置。<br>    　　　　————————————————————————–<br>　　　　　　　　3. 为不同的 Appender 设置日志输出级别：<br>　　　　　　　　　　当调试系统时，我们往往注意的只是异常级别的日志输出，<br>            但是通常所有级别的输出都是放在一个文件里的，<br>            如果日志输出的级别是BUG！？那就慢慢去找吧。<br>　　　　　　　　　　这时我们也许会想要是能把异常信息单独输出到一个文件里该多好啊。<br>            当然可以，Log4j已经提供了这样的功能，我们只需要在配置中修改Appender的<br>        Threshold 就能实现,比如下面的例子：<br>　　　　　　　　[配置文件]<br>　　　　　　　　　　### set log levels ###<br>　　　　　　　　　　log4j.rootLogger = debug , stdout , D , E</p>
+<p>　　　　　　　　　　### 输出到控制台 ###<br>　　　　　　　　　　log4j.appender.stdout = org.apache.log4j.ConsoleAppender<br>　　　　　　　　　　log4j.appender.stdout.Target = System.out<br>　　　　　　　　　　log4j.appender.stdout.layout = org.apache.log4j.PatternLayout<br>　　　　　　　　　　log4j.appender.stdout.layout.ConversionPattern =<br>                %d{ABSOLUTE} %5p %c{ 1 }:%L - %m%n</p>
+<p>　　　　　　　　　　### 输出到日志文件 ###<br>　　　　　　　　　　log4j.appender.D = org.apache.log4j.DailyRollingFileAppender<br>　　　　　　　　　　log4j.appender.D.File = logs/log.log<br>　　　　　　　　　　log4j.appender.D.Append = true<br>　　　　　　　　　　log4j.appender.D.Threshold = DEBUG ## 输出DEBUG级别以上的日志<br>　　　　　　　　　　log4j.appender.D.layout = org.apache.log4j.PatternLayout<br>　　　　　　　　　　log4j.appender.D.layout.ConversionPattern =<br>                %-d{yyyy-MM-dd HH:mm:ss} [ %t:%r ] - [ %p ] %m%n</p>
+<p>　　　　　　　　　　### 保存异常信息到单独文件 ###<br>　　　　　　　　　　log4j.appender.D = org.apache.log4j.DailyRollingFileAppender<br>　　　　　　　　　　log4j.appender.D.File = logs/error.log ## 异常日志文件名<br>　　　　　　　　　　log4j.appender.D.Append = true<br>　　　　　　　　　　log4j.appender.D.Threshold = ERROR ## 只输出ERROR级别以上的日志!!!<br>　　　　　　　　　　log4j.appender.D.layout = org.apache.log4j.PatternLayout<br>　　　　　　　　　　log4j.appender.D.layout.ConversionPattern =<br>                %-d{yyyy-MM-dd HH:mm:ss} [ %t:%r ] - [ %p ] %m%n</p>
+<p>　　　　　　　　　　[代码中使用]<br>　　　　　　　　　　public class TestLog4j {<br>　　　　　　　　　　　　public static void main(String[] args) {<br>　　　　　　　　　　　　　　PropertyConfigurator.configure( “ D:/Code/conf/log4j.properties “ );<br>　　　　　　　　　　　　　　Logger logger = Logger.getLogger(TestLog4j. class );<br>    　　　　　　　　　　logger.debug( “ debug “ );<br>　　　　　　　　　　　　　　logger.error( “ error “ );<br>　　　　　　　　　　　　}<br>　　　　　　　　　　}<br>　　　　　　———————————————————————————–<br>　　　　　　public class Test {<br>　　　　　　　　private static Logger logger = Logger.getLogger(Test.class);<br>　　　　　　　　public static void main(String[] args) {<br>　　　　　　　　　　// System.out.println(“This is println message.”);</p>
+<p>　　　　　　　　　　// 记录debug级别的信息<br>　　　　　　　　　　logger.debug(“This is debug message.”);<br>　　　　　　　　　　// 记录info级别的信息<br>　　　　　　　　　　ogger.info(“This is info message.”);<br>　　　　　　　　　　// 记录error级别的信息<br>　　　　　　　　　　logger.error(“This is error message.”);<br>　　　　　　　　}<br>　　　　　　}<br>　　　　—————————————————————————–<br>　　　　最后粘上本人用的测试log4j的配置文件内容，仅供参考。希望对您有所帮助<br>　　　　　　log4j.rootLogger=INFO, stdout, file</p>
+<p>　　　　　　log4j.appender.stdout=org.apache.log4j.ConsoleAppender<br>　　　　　　log4j.appender.stdout.layout=org.apache.log4j.PatternLayout<br>　　　　　　log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss SSS} %t %5p %l - %m%n</p>
+<p>　　　　　　log4j.appender.file=org.apache.log4j.DailyRollingFileAppender<br>　　　　　　log4j.appender.file.Threshold=debug<br>　　　　　　log4j.appender.file.layout=org.apache.log4j.PatternLayout<br>　　　　　　log4j.appender.file.layout.ConversionPattern= %d{yyyy-MM-dd HH:mm:ss SSS} %t %5p %l - %m%n<br>　　　　　　log4j.appender.file.File=D:/others/logs/jar/debug.log<br>　　　　　　#log4j.appender.file.File=/home/test_zzs_dzfp/logs/zzssl/zzssl.log<br>　　　　　　log4j.appender.file.MaxFileSize=200MB<br>　　　　　　log4j.appender.file.MaxBackupIndex=20</p>
+<p>　　　　　　#project defalult level<br>　　　　　　#log4j.logger.hsy.utils=INFO</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;Log4J的配置文件就是用来设置记录器的级别、存放器和布局的，它可接key=value格式的设置
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或xml格式的设置信息。通过配置，可以创建出Log4J的运行环境。log4j.properties ==&amp;gt; src同级创建
+    
+    </summary>
+    
+      <category term="日志管理之美" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E4%B9%8B%E7%BE%8E/"/>
+    
+    
+      <category term="log4j,java,日志,logback" scheme="http://yoursite.com/tags/log4j-java-%E6%97%A5%E5%BF%97-logback/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,63 @@
+menu:
+ 首页: /
+ 归档: /archives #归档
+ 标签: /tags #标签
+ 分类: /categories
+ 我: /about
+ 代码仓库: /https://github.com/shiyuan2he
+
+menu_icons:
+ enable: true
+ 首页: home
+ 我: user
+ 分类: th
+ 标签: tags
+ 归档: archive
+ commonweal: heartbeat
+
+widgets:
+- about
+- support
+- music
+- recent_posts
+- archive
+- category
+- tagcloud
+- link
+- account
+
+social:
+ Github: https://github.com/shiyuan2he
+ Weibo: http://weibo.com/shiyuanhe/home
+
+social_menu:
+ Github: github
+ Weibo: weibo
+
+avator: http://7xrz9n.com1.z0.glb.clouddn.com/logo.png #头像
+
+toc:
+ enable:true #文章自动显示目录
+
+## 文章末尾是否显示打赏按钮
+donate: 
+  enable: true
+  text: Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！
+  alipay: 
+  wechat: 
+
+excerpt_link: 更多内容
+prev: 上一页
+next: 下一页
+reply: 评论
+share: 分享
+fancybox: true
+
+google_analytics:
+duoshuo_shortname: flhexo
+rss: /atom.xml
+favicon: http://7u2hdm.com1.z0.glb.clouddn.com/favicon.ico
+google_site_verification: NCXVSqxqB-os803-VFMtIEd1SUNJVOIjctCfNYUwD0w
+baidu_site_verification: Nzwx7HuplM
+bing_site_verification: 9E9EA92F7E5327E1FE8A5196D5253664
+music: http://7u2hdm.com1.z0.glb.clouddn.com/bg.mp3
