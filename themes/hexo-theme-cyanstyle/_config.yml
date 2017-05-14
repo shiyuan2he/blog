@@ -1,23 +1,20 @@
 menu:
  首页: /
  归档: /archives #归档
- 标签: /tags #标签
  分类: /categories
  我: /about
- 代码仓库: /https://github.com/shiyuan2he
-
+ 代码仓库: https://github.com/shiyuan2he
+ #commonweal: /404.html
 menu_icons:
  enable: true
  首页: home
- 我: user
  分类: th
- 标签: tags
+ 我: user
  归档: archive
- commonweal: heartbeat
 
 widgets:
 - about
-- support
+- donate
 - music
 - recent_posts
 - archive
@@ -34,7 +31,7 @@ social_menu:
  Github: github
  Weibo: weibo
 
-avator: http://7xrz9n.com1.z0.glb.clouddn.com/logo.png #头像
+avator: /img/weixinpay.jpg #图像
 
 toc:
  enable:true #文章自动显示目录
@@ -44,7 +41,7 @@ donate:
   enable: true
   text: Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！
   alipay: 
-  wechat: 
+  wechat: /img/weixinpay.jpg 
 
 excerpt_link: 更多内容
 prev: 上一页
