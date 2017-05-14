@@ -1,17 +1,15 @@
 menu:
  首页: /
  归档: /archives #归档
- 标签: /tags #标签
  分类: /categories
  我: /about
- 代码仓库: /https://github.com/shiyuan2he
+ 代码仓库: https://github.com/shiyuan2he
 
 menu_icons:
  enable: true
  首页: home
  我: user
  分类: th
- 标签: tags
  归档: archive
  commonweal: heartbeat
 
