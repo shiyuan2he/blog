@@ -4,12 +4,19 @@ menu:
  分类: /categories
  我: /about
  代码仓库: https://github.com/shiyuan2he
+<<<<<<< HEAD
  #commonweal: /404.html
+=======
+
+>>>>>>> e1a990fbb5a99de3d1a679a1b7167712409db834
 menu_icons:
  enable: true
  首页: home
  分类: th
+<<<<<<< HEAD
  我: user
+=======
+>>>>>>> e1a990fbb5a99de3d1a679a1b7167712409db834
  归档: archive
 
 widgets:
